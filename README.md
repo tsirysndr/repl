@@ -2,6 +2,7 @@
 
 [![deno module](https://shield.deno.dev/x/repl)](https://deno.land/x/repl)
 ![deno compatibility](https://shield.deno.dev/deno/^1.37)
+[![discord](https://img.shields.io/discord/1158759693846597714?label=discord&logo=discord&color=5865F2)](https://discord.gg/UdWRE2d86f)
 
 ![ alt text](./demo.gif)
 
