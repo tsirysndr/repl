@@ -3,6 +3,8 @@
 [![deno module](https://shield.deno.dev/x/repl)](https://deno.land/x/repl)
 ![deno compatibility](https://shield.deno.dev/deno/^1.37)
 
+![ alt text](./demo.gif) 
+
 This is a simple extendable REPL CLI.
 Currently available plugins:
 
