@@ -12,3 +12,9 @@ Currently available plugins:
 ```bash
 deno install -A -r https://deno.land/x/repl/main.ts -n repl
 ```
+
+### 🚀 Quick Start
+
+```bash
+deno run -A https://deno.land/x/repl/main.ts
+```
