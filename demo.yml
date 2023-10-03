@@ -1,0 +1,375 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/tsirysndr/Documents/github/repl
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 113
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 25
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "agave Nerd Font Mono, Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 913
+    content: "\e7\r\e[K[▽]\e[6n\r\e[K[▶]\e[6n\r\e[K[龼]\e[6n\r\e[K[鿄]\e[6n\r\e[K[ㆸ]\e[6n\r\e[K[ힰ]\e[6n\r\e[K[゙]\e[6n\r\e[K[鿍]\e[6n\r\e[K[\U0001F93B]\e[6n\r\e[K[ㄮ]\e[6n\r\e[K[ㄯ]\e[6n\r\e[K[\U00016FE2]\e[6n\r\e[K[㋿]\e[6n\r\e[K[ㆻ]\e[6n\r\e[K[鿽]\e[6n\r\e[K[\U0001B132]\e[6n\r\e[K\e8\e[?2004h\e[?25h"
+  - delay: 30
+    content: "\e[?25l\r\e(B\e[m\r\n\e(B\e[m\e[1L\e[2K\e(B\e[m\e[1A\e[2K\e[2M\e[2L\e[2K\e[0;38;2;122;162;247m➜ \e(B\e[m\e[0;1m\e[0;1;38;2;187;154;247mrepl\e[0;38;2;187;154;247m \e[0;38;2;125;207;255m⚡\e(B\e[m\e[0;38;2;125;207;255m( main)\e(B\e[m                                                                       \e[0;38;2;158;206;106m 16.20.2 \e(B\e[m\e[0;38;2;169;177;214m 9 minutes ago \e(B\e[m\r\r\n\e[0;38;2;158;206;106m▶\e(B\e[m\e]0; repl :: \a \e[?25h"
+  - delay: 40
+    content: "\e[?25l\e7\e[1;2r\e[2;1H\e[1B\e[6n\e[;r\e[2;1H\e[1B\e[6n\e[r\e8\e[>c\e(B\e[m\e[1A\r\e[2K\e[2M\e[2L\e[2K\e[0;38;2;122;162;247m➜ \e(B\e[m\e[0;1m\e[0;1;38;2;187;154;247mrepl\e[0;38;2;187;154;247m \e[0;38;2;125;207;255m⚡\e(B\e[m\e[0;38;2;125;207;255m( main)\e(B\e[m                                                                       \e[0;38;2;158;206;106m 16.20.2 \e(B\e[m\e[0;38;2;169;177;214m 9 minutes ago \e(B\e[m\r\r\n\e[0;38;2;158;206;106m▶\e(B\e[m\e]0; repl :: \a \e[?25h"
+  - delay: 62
+    content: "\e[?25l\e[>4;1m\e[>4;2m\e[m\e(B\e[m\e[1A\r\e[0;38;2;122;162;247m➜ \e(B\e[m\e[0;1m\e[0;1;38;2;187;154;247mrepl\e[0;38;2;187;154;247m \e[0;38;2;125;207;255m⚡\e(B\e[m\e[0;38;2;125;207;255m( main)\e(B\e[m                                                                       \e[0;38;2;158;206;106m 16.20.2 \e(B\e[m\e[0;38;2;169;177;214m 9 minutes ago \e(B\e[m\r\r\n\e[0;38;2;158;206;106m▶\e(B\e[m\e]0; repl :: \a \e[?25h"
+  - delay: 594
+    content: "\e[?25l\e[0;38;5;231;48;5;203m\e[0;38;5;231;48;5;203md\e(B\e[m\e[K\e[?25h"
+  - delay: 43
+    content: "\e[?25l\e(B\e[m\e[1D\e[0;32m\e[0;32md\e[0;38;5;238;48;5;254meno run -A https://deno.land/x/repl/main.ts\e(B\e[m\e[K\e(B\e[m\e[43D\e[?25h"
+  - delay: 75
+    content: "\e[?25l\e[0;32me\e[0;38;5;238;48;5;254mno run -A https://deno.land/x/repl/main.ts\e(B\e[m\e[42D\e[?25h"
+  - delay: 67
+    content: "\e[?25l\e[0;32mn\e[0;38;5;238;48;5;254mo run -A https://deno.land/x/repl/main.ts\e(B\e[m\e[41D\e[?25h"
+  - delay: 45
+    content: "\e[?25l\e[0;32mo\e[0;38;5;238;48;5;254m run -A https://deno.land/x/repl/main.ts\e(B\e[m\e[40D\e[?25h"
+  - delay: 356
+    content: "\e[?25l\e(B\e[m\e[4D\e[0;32m\e[0;32mdeno\e[0m \e(B\e[m\e[K\e[?25h"
+  - delay: 32
+    content: "\e[?25l\e(B\e[m\e[5D\e[0;32m\e[0;32mdeno\e[0m \e[0;38;5;238;48;5;254mrun -A https://deno.land/x/repl/main.ts\e(B\e[m\e[K\e(B\e[m\e[39D\e[?25h"
+  - delay: 1092
+    content: "\e[?25l\e[0mr\e[0;38;5;238;48;5;254mun -A https://deno.land/x/repl/main.ts\e(B\e[m\e[38D\e[?25h"
+  - delay: 135
+    content: "\e[?25l\e[0mu\e[0;38;5;238;48;5;254mn -A https://deno.land/x/repl/main.ts\e(B\e[m\e[37D\e[?25h"
+  - delay: 109
+    content: "\e[?25l\e[0mn\e[0;38;5;238;48;5;254m -A https://deno.land/x/repl/main.ts\e(B\e[m\e[36D\e[?25h"
+  - delay: 275
+    content: "\e[?25l\e(B\e[m\e[3D\e[0mrun \e(B\e[m\e[K\e[?25h"
+  - delay: 23
+    content: "\e[?25l\e(B\e[m\e[4D\e[0mrun \e[0;38;5;238;48;5;254m-A https://deno.land/x/repl/main.ts\e(B\e[m\e[K\e(B\e[m\e[35D\e[?25h"
+  - delay: 238
+    content: "\e[?25l\e[0;36m\e[0;36m-\e[0;38;5;238;48;5;254mA https://deno.land/x/repl/main.ts\e(B\e[m\e[34D\e[?25h"
+  - delay: 456
+    content: "\e[?25l\e[0;36mA\e[0;38;5;238;48;5;254m https://deno.land/x/repl/main.ts\e(B\e[m\e[33D\e[?25h"
+  - delay: 227
+    content: "\e[?25l\e(B\e[m\e[2D\e[0;36m\e[0;36m-A\e[0m \e(B\e[m\e[K\e[?25h"
+  - delay: 23
+    content: "\e[?25l\e(B\e[m\e[3D\e[0;36m\e[0;36m-A\e[0m \e[0;38;5;238;48;5;254mhttps://deno.land/x/repl/main.ts\e(B\e[m\e[K\e(B\e[m\e[32D\e[?25h"
+  - delay: 219
+    content: "\e[?25l\e(B\e[m\e[3D\e[0;36m\e[0;36m-A\e[0m m\e(B\e[m\e[K\e[?25h"
+  - delay: 20
+    content: "\e[?25l\e(B\e[m\e[1D\e[0;4m\e[0;4mm\e[0;38;5;238;48;5;254main.ts \e(B\e[m\e[K\e(B\e[m\e[7D\e[?25h"
+  - delay: 500
+    content: "\e[?25l\e(B\e[m\e[1D\e[0;4m\e[0;4mmain.ts\e[0m \e(B\e[m\e[K\e[?25h"
+  - delay: 298
+    content: "\e[?25l\e(B\e[m\r\n\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?2004l\e[>4;1m\e[m\e[?25h"
+  - delay: 178
+    content: "Repl v0.2.1 \U0001F680 ✨\r\nexit using ctrl+c, or exit, type help for more info\r\n\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[6G"
+  - delay: 1248
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mh\e[24m\e[2melp\e[22m\e[7G"
+  - delay: 105
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mhe\e[24m\e[2mlp\e[22m\e[8G"
+  - delay: 229
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mhel\e[24m\e[2mp\e[22m\e[9G"
+  - delay: 106
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mhelp\e[24m\e[2m\e[22m\e[10G"
+  - delay: 797
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[32mhelp\e[39m\r\n\e[?25h\e[?25hCommon Commands:\r\n    use         Use a plugin\r\n    help        Show this message\r\n    list        List available plugins\r\n    exit        Exit the repl\r\n\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[6G"
+  - delay: 2373
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4ml\e[24m\e[2mist\e[22m\e[7G"
+  - delay: 105
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mli\e[24m\e[2mst\e[22m\e[8G"
+  - delay: 112
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mlis\e[24m\e[2mt\e[22m\e[9G"
+  - delay: 414
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mlist\e[24m\e[2m\e[22m\e[10G"
+  - delay: 413
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[32mlist\e[39m\r\n\e[?25h\e[?25hAvailable plugins:\r\n\e[32mdocker\e[39m\r\n\e[32mgit\e[39m\r\n\e[32mgh\e[39m\r\ntype \e[36muse <plugin>\e[39m to use a plugin\r\n\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[6G"
+  - delay: 2508
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mu\e[24m\e[2mse\e[22m\e[7G"
+  - delay: 148
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mus\e[24m\e[2me\e[22m\e[8G"
+  - delay: 278
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse\e[24m\e[2m\e[22m\e[9G"
+  - delay: 187
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse \e[24m\e[2m\e[22m\e[10G"
+  - delay: 208
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse d\e[24m\e[2m\e[22m\e[11G"
+  - delay: 118
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse do\e[24m\e[2m\e[22m\e[12G"
+  - delay: 87
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse doc\e[24m\e[2m\e[22m\e[13G"
+  - delay: 106
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse dock\e[24m\e[2m\e[22m\e[14G"
+  - delay: 122
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse docke\e[24m\e[2m\e[22m\e[15G"
+  - delay: 57
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse docker\e[24m\e[2m\e[22m\e[16G"
+  - delay: 537
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[32muse docker\e[39m\r\n\e[?25h\e[?25h\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[12G"
+  - delay: 2126
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4mh\e[24m\e[2melp\e[22m\e[13G"
+  - delay: 83
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4mhe\e[24m\e[2mlp\e[22m\e[14G"
+  - delay: 220
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4mhel\e[24m\e[2mp\e[22m\e[15G"
+  - delay: 42
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4mhelp\e[24m\e[2m\e[22m\e[16G"
+  - delay: 434
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[32mhelp\e[39m\r\n\e[?25h\e[?25hCommon Commands:\r\n        run         Create and run a new container from an image\r\n        exec        Execute a command in a running container\r\n        ps          List containers\r\n        build       Build an image from a Dockerfile\r\n        pull        Download an image from a registry\r\n        push        Upload an image to a registry\r\n        images      List images\r\n        login       Log in to a registry\r\n        logout      Log out from a registry\r\n        search      Search Docker Hub for images\r\n        version     Show the Docker version information\r\n        info        Display system-wide information\r\n        compose     Docker Compose\r\n\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[12G"
+  - delay: 2066
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4mp\e[24m\e[2ms\e[22m\e[13G"
+  - delay: 86
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4mps\e[24m\e[2m\e[22m\e[14G"
+  - delay: 217
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[32mps\e[39m\r\n\e[?25h\e[?25h"
+  - delay: 84
+    content: "CONTAINER ID   IMAGE                                COMMAND                  CREATED        STATUS        PORTS     NAMES\r\nf64ffd6c0f6d   localhost/dagger-engine.dev:latest   \"dagger-entrypoint.s…\"   41 hours ago   Up 41 hours             dagger-engine.dev\r\nffb2ada00892   registry.dagger.io/engine:v0.8.7     \"dagger-entrypoint.s…\"   5 days ago     Up 47 hours             dagger-engine-be7d2e4256ad2b56\r\n\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[12G"
+  - delay: 2635
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4ms\e[24m\e[2mearch\e[22m\e[13G"
+  - delay: 224
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4mse\e[24m\e[2march\e[22m\e[14G"
+  - delay: 696
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4msearch\e[24m\e[2m\e[22m\e[18G"
+  - delay: 444
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4msearch \e[24m\e[2m\e[22m\e[19G"
+  - delay: 729
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4msearch m\e[24m\e[2m\e[22m\e[20G"
+  - delay: 105
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4msearch mi\e[24m\e[2m\e[22m\e[21G"
+  - delay: 113
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4msearch min\e[24m\e[2m\e[22m\e[22G"
+  - delay: 115
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4msearch mini\e[24m\e[2m\e[22m\e[23G"
+  - delay: 87
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4msearch minio\e[24m\e[2m\e[22m\e[24G"
+  - delay: 314
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[32msearch minio\e[39m\r\n\e[?25h\e[?25h"
+  - delay: 1698
+    content: "NAME                           DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED\r\nbitnami/minio                  Bitnami MinIO Docker Image                      98                   \r\nbitnami/minio-client           Bitnami MinIO Client Docker Image               11                   \r\nrancher/minio-minio                                                            1                    \r\nbitnamicharts/minio                                                            0                    \r\nelestio/minio                  Minio, verified and packaged by Elestio         0                    \r\ncorpusops/minio                https://github.com/corpusops/docker-images/     0                    \r\nlonghornio/minio                                                               0                    \r\ndrud/minio                                                                     0                    \r\nhephy/minio                                                                    0                    \r\nsilintl/minio-default-server                                                   0                    \r\ncorpusops/minio-k8s-operator   https://github.com/corpusops/docker-images/     0                    \r\ncorpusops/minio-mint           https://github.com/corpusops/docker-images/     0                    \r\nnewrelic/synthetics-minion     Synthetics Containerized Private Minion         6                    \r\ncorpusops/minio-doctor         https://github.com/corpusops/docker-images/     0                    \r\ndrud/minio-exporter                                                            0                    \r\nvulhub/minio                                                                   0                    \r\njumpserver/minio               Multi-Cloud Object Storage                      0                    \r\njumpserver/mc                  Minio Client (mc) provides a modern alternat…   0                    \r\nminio/minio                    Multi-Cloud Object Storage                      751                  [OK]\r\nminio/mc                       Minio Client (mc) provides a modern alternat…   45                   [OK]\r\nminio/console                  A graphical user interface for MinIO server     17                   \r\nminio/operator                                                                 7                    \r\nminio/k8s-operator             Minio Operator for k8s https://kubernetes.io/   1                    \r\nminio/kes                      Description  Kes is a tool for managing and …   3                    \r\nminio/direct-csi               Container Storage Interface (CSI) driver for…   0                    \r\n"
+  - delay: 17
+    content: "\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[12G"
+  - delay: 2054
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4me\e[24m\e[2mxec\e[22m\e[13G"
+  - delay: 77
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4mex\e[24m\e[2mec\e[22m\e[14G"
+  - delay: 127
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4mexi\e[24m\e[2m\e[22m\e[15G"
+  - delay: 220
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[4mexit\e[24m\e[2m\e[22m\e[16G"
+  - delay: 572
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mdocker\e[22m \e[94m›\e[39m \e[32mexit\e[39m\r\n\e[?25h\e[?25h\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[6G"
+  - delay: 1163
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mu\e[24m\e[2mse\e[22m\e[7G"
+  - delay: 65
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mus\e[24m\e[2me\e[22m\e[8G"
+  - delay: 179
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse\e[24m\e[2m\e[22m\e[9G"
+  - delay: 158
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse \e[24m\e[2mdocker\e[22m\e[10G"
+  - delay: 1001
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse g\e[24m\e[2m\e[22m\e[11G"
+  - delay: 167
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse gh\e[24m\e[2m\e[22m\e[12G"
+  - delay: 753
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[32muse gh\e[39m\r\n\e[?25h\e[?25h\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[8G"
+  - delay: 879
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[4mh\e[24m\e[2melp\e[22m\e[9G"
+  - delay: 102
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[4mhe\e[24m\e[2mlp\e[22m\e[10G"
+  - delay: 246
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[4mhel\e[24m\e[2mp\e[22m\e[11G"
+  - delay: 78
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[4mhelp\e[24m\e[2m\e[22m\e[12G"
+  - delay: 249
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[32mhelp\e[39m\r\n\e[?25h\e[?25hCommon GitHub CLI Commands:\r\n        pr      Work with pull requests\r\n        repo    Create, clone, fork, and view repositories\r\n        issue   Create and manage issues\r\n        gist    Create gists\r\n        auth    Authenticate and configure GitHub CLI\r\n\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[8G"
+  - delay: 2261
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[4me\e[24m\e[2m\e[22m\e[9G"
+  - delay: 87
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[4mex\e[24m\e[2m\e[22m\e[10G"
+  - delay: 144
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[4mexi\e[24m\e[2m\e[22m\e[11G"
+  - delay: 149
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[4mexit\e[24m\e[2m\e[22m\e[12G"
+  - delay: 546
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgh\e[22m \e[94m›\e[39m \e[32mexit\e[39m\r\n\e[?25h\e[?25h\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[6G"
+  - delay: 684
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mu\e[24m\e[2mse\e[22m\e[7G"
+  - delay: 48
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mus\e[24m\e[2me\e[22m\e[8G"
+  - delay: 166
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse\e[24m\e[2m\e[22m\e[9G"
+  - delay: 110
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse \e[24m\e[2mgh\e[22m\e[10G"
+  - delay: 306
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse g\e[24m\e[2mh\e[22m\e[11G"
+  - delay: 122
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse gi\e[24m\e[2m\e[22m\e[12G"
+  - delay: 75
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4muse git\e[24m\e[2m\e[22m\e[13G"
+  - delay: 457
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[32muse git\e[39m\r\n\e[?25h\e[?25h\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[9G"
+  - delay: 1733
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mh\e[24m\e[2melp\e[22m\e[10G"
+  - delay: 123
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mhe\e[24m\e[2mlp\e[22m\e[11G"
+  - delay: 148
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mhel\e[24m\e[2mp\e[22m\e[12G"
+  - delay: 86
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mhelp\e[24m\e[2m\e[22m\e[13G"
+  - delay: 229
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[32mhelp\e[39m\r\n\e[?25h\e[?25hGit Commands:\r\n        clone       Clone a repository into a new directory\r\n        pull        Fetch from and integrate with another repository or a local branch\r\n        push        Update remote refs along with associated objects\r\n        commit      Record changes to the repository\r\n        status      Show the working tree status\r\n        branch      List, create, or delete branches\r\n        log         Show the commit logs\r\n        merge       Join two or more development histories together\r\n        tag         Create, list, delete, or verify a tag object signed with GPG\r\n\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[9G"
+  - delay: 871
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4ms\e[24m\e[2mtatus\e[22m\e[10G"
+  - delay: 90
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mst\e[24m\e[2matus\e[22m\e[11G"
+  - delay: 115
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4msta\e[24m\e[2mtus\e[22m\e[12G"
+  - delay: 83
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mstat\e[24m\e[2mus\e[22m\e[13G"
+  - delay: 184
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mstatu\e[24m\e[2ms\e[22m\e[14G"
+  - delay: 77
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mstatus\e[24m\e[2m\e[22m\e[15G"
+  - delay: 390
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[32mstatus\e[39m\r\n\e[?25h\e[?25h"
+  - delay: 15
+    content: "On branch main\r\nYour branch is based on 'origin/master', but the upstream is gone.\r\n  (use \"git branch --unset-upstream\" to fixup)\r\n\r\nnothing to commit, working tree clean\r\n\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[9G"
+  - delay: 2478
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mb\e[24m\e[2mranch\e[22m\e[10G"
+  - delay: 147
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mbr\e[24m\e[2manch\e[22m\e[11G"
+  - delay: 2510
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mbranch\e[24m\e[2m\e[22m\e[15G"
+  - delay: 259
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[32mbranch\e[39m\r\n\e[?25h\e[?25h"
+  - delay: 22
+    content: "\e[?1h\e=\r* \e[32mmain\e[m\e[m\r\n  plugin/docker/compose\e[m\e[m\r\n\r\e[K\e[?1l\e>\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[9G"
+  - delay: 2371
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4me\e[24m\e[2m\e[22m\e[10G"
+  - delay: 147
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mex\e[24m\e[2m\e[22m\e[11G"
+  - delay: 261
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mexi\e[24m\e[2m\e[22m\e[12G"
+  - delay: 332
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[4mexit\e[24m\e[2m\e[22m\e[13G"
+  - delay: 417
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1mgit\e[22m \e[94m›\e[39m \e[32mexit\e[39m\r\n\e[?25h\e[?25h\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4m\e[24m\e[2m\e[22m\e[6G"
+  - delay: 486
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4me\e[24m\e[2mxit\e[22m\e[7G"
+  - delay: 76
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mex\e[24m\e[2mit\e[22m\e[8G"
+  - delay: 159
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mexi\e[24m\e[2mt\e[22m\e[9G"
+  - delay: 151
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[4mexit\e[24m\e[2m\e[22m\e[10G"
+  - delay: 238
+    content: "\e[G\e[0J\e[33m? \e[39m\e[1m\e[22m \e[94m›\e[39m \e[32mexit\e[39m\r\n\e[?25h\e[?25hBye!\r\n"
+  - delay: 35
+    content: "\e(B\e[m\e7\e[0;94m[ble: EOF]\e(B\e[m\e(B\e[m\e8\e[111C  \r\e[K"
+  - delay: 5
+    content: "\e[?2004h\e[>4;1m\e[>4;2m\e[m\e[?25h"
+  - delay: 63
+    content: "\e[?25l\e(B\e[m\r\n\e(B\e[m\e[1L\e[2K\e(B\e[m\e[1A\e[2K\e[2M\e[2L\e[2K\e[0;38;2;122;162;247m➜ \e(B\e[m\e[0;1m\e[0;1;38;2;187;154;247mrepl\e[0;38;2;187;154;247m \e[0;38;2;125;207;255m⚡\e(B\e[m\e[0;38;2;125;207;255m( main)\e(B\e[m                                                                       \e[0;38;2;158;206;106m 16.20.2 \e(B\e[m\e[0;38;2;169;177;214m 9 minutes ago \e(B\e[m\r\r\n\e[0;38;2;158;206;106m▶\e(B\e[m\e]0; repl :: \a \e[?25h"
+  - delay: 707
+    content: "\e[?25l\e[94m[ble: exit]\e(B\e[m\r\n\e[?25h\e[?2004l\r"
+  - delay: 8
+    content: "\e[?25l\e[?2004l\e[>4;1m\e[m\e[?25h"
