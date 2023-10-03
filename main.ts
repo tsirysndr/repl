@@ -5,9 +5,11 @@ import Docker from "./docker.ts";
 
 const plugins = [new Docker()];
 
+const history: string[] = [];
+
 async function repl(
   message = "",
-  suggestions = ["use", "help", "list", "exit"],
+  suggestions = ["use", "help", "list", "exit", ...history],
   evaluate?: (command: string) => Promise<void>
 ) {
   const command = await Input.prompt({
@@ -28,6 +30,7 @@ async function repl(
     console.log("Available plugins:");
     plugins.forEach((plugin) => console.log(green(plugin.name)));
     console.log(`type ${cyan("use <plugin>")} to use a plugin`);
+    history.push("list");
     repl(message, suggestions, evaluate);
     return;
   }
@@ -46,8 +49,11 @@ async function repl(
     const plugin = command.split(" ")[1];
     if (plugins.find((p) => p.name === plugin)) {
       const plugin = new Docker();
-      repl(plugin.name, Object.keys(plugin.commands), (command: string) =>
-        new Docker().evaluate(command)
+      history.push(`use ${plugin.name}`);
+      repl(
+        plugin.name,
+        [...Object.keys(plugin.commands), ...history],
+        (command: string) => new Docker().evaluate(command)
       );
       return;
     } else {
@@ -58,8 +64,9 @@ async function repl(
   }
 
   if (evaluate) {
+    history.push(command);
     await evaluate(command);
-    repl(message, suggestions, evaluate);
+    repl(message, [...suggestions, ...history], evaluate);
     return;
   }
 
