@@ -15,6 +15,7 @@ Currently available plugins:
 - [Terraform](https://terraform.io/)
 - [Homebrew](https://brew.sh/)
 - [Bun](https://bun.sh)
+- [Pkgx](https://pkgx.sh)
   
 ## 🚚 Installation
 
