@@ -1,5 +1,4 @@
-import { Input } from "https://deno.land/x/cliffy@v1.0.0-rc.3/prompt/mod.ts";
-import { green, cyan } from "https://deno.land/std@0.203.0/fmt/colors.ts";
+import { Input, green, cyan } from "./deps.ts";
 
 import Docker from "./plugins/docker.ts";
 import Git from "./plugins/git.ts";
