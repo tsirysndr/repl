@@ -5,6 +5,7 @@ import Git from "./plugins/git.ts";
 import GithubCLI from "./plugins/github-cli.ts";
 import Terraform from "./plugins/terraform.ts";
 import Brew from "./plugins/brew.ts";
+import Bun from "./plugins/bun.ts";
 
 const plugins = [
   new Docker(),
@@ -12,6 +13,7 @@ const plugins = [
   new GithubCLI(),
   new Terraform(),
   new Brew(),
+  new Bun(),
 ];
 
 const history: string[] = [];
