@@ -4,8 +4,15 @@ import Docker from "./plugins/docker.ts";
 import Git from "./plugins/git.ts";
 import GithubCLI from "./plugins/github-cli.ts";
 import Terraform from "./plugins/terraform.ts";
+import Brew from "./plugins/brew.ts";
 
-const plugins = [new Docker(), new Git(), new GithubCLI(), new Terraform()];
+const plugins = [
+  new Docker(),
+  new Git(),
+  new GithubCLI(),
+  new Terraform(),
+  new Brew(),
+];
 
 const history: string[] = [];
 
