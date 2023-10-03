@@ -10,7 +10,7 @@ class Terraform implements Plugin {
       validate: (args: string[]) => spawn(this.name, ["validate", ...args]),
       plan: (args: string[]) => spawn(this.name, ["plan", ...args]),
       apply: (args: string[]) => spawn(this.name, ["apply", ...args]),
-      destroy: (args: string[]) => spawn(this.name, ["destory", ...args]),
+      destroy: (args: string[]) => spawn(this.name, ["destroy", ...args]),
       console: (args: string[]) => spawn(this.name, ["console", ...args]),
       fmt: (args: string[]) => spawn(this.name, ["fmt", ...args]),
       force_unlock: (args: string[]) => spawn(this.name, ["force-unlock", ...args]),
