@@ -2,8 +2,9 @@ import { Input } from "https://deno.land/x/cliffy@v1.0.0-rc.3/prompt/mod.ts";
 import { green, cyan } from "https://deno.land/std@0.203.0/fmt/colors.ts";
 
 import Docker from "./docker.ts";
+import Git from "./git.js";
 
-const plugins = [new Docker()];
+const plugins = [new Docker(), new Git()];
 
 const history: string[] = [];
 
@@ -47,13 +48,13 @@ async function repl(
 
   if (command.startsWith("use ")) {
     const plugin = command.split(" ")[1];
-    if (plugins.find((p) => p.name === plugin)) {
-      const plugin = new Docker();
-      history.push(`use ${plugin.name}`);
+    const selectedPlugin = plugins.find((p) => p.name === plugin);
+    if (selectedPlugin) {
+      history.push(`use ${selectedPlugin.name}`);
       repl(
-        plugin.name,
-        [...Object.keys(plugin.commands), ...history],
-        (command: string) => new Docker().evaluate(command)
+        selectedPlugin.name,
+        [...Object.keys(selectedPlugin.commands), ...history],
+        (command: string) => selectedPlugin.evaluate(command)
       );
       return;
     } else {
