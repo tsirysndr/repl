@@ -7,6 +7,7 @@ import Terraform from "./plugins/terraform.ts";
 import Brew from "./plugins/brew.ts";
 import Bun from "./plugins/bun.ts";
 import Pkgx from "./plugins/pkgx.ts";
+import Pulumi from "./plugins/pulumi.ts";
 
 const plugins = [
   new Docker(),
@@ -16,6 +17,7 @@ const plugins = [
   new Brew(),
   new Bun(),
   new Pkgx(),
+  new Pulumi(),
 ];
 
 const history: string[] = [];

@@ -16,6 +16,7 @@ Currently available plugins:
 - [Homebrew](https://brew.sh/)
 - [Bun](https://bun.sh)
 - [Pkgx](https://pkgx.sh)
+- [Pulumi](https://pulumi.com)
   
 ## 🚚 Installation
 
