@@ -1,3 +1,4 @@
+import { spawn } from "./helpers.ts";
 import Plugin from "./plugin.ts";
 
 class Docker implements Plugin {
@@ -5,105 +6,17 @@ class Docker implements Plugin {
   commands: Record<string, (params: string[]) => Promise<void>>;
   constructor() {
     this.commands = {
-      run: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["run", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
-      ps: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["ps", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
-      container: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["container", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
-      images: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["images", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
-      exec: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["exec", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
-      build: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["build", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
-      pull: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["pull", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
-      push: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["push", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
-      search: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["search", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
-      version: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["version", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
-      info: async (args: string[]) => {
-        const command = new Deno.Command(this.name, {
-          args: ["info", ...args],
-          stdout: "inherit",
-          stderr: "inherit",
-        });
-        const child = command.spawn();
-        await child.status;
-      },
+      run: (args: string[]) => spawn(this.name, ["run", ...args]),
+      ps: (args: string[]) => spawn(this.name, ["ps", ...args]),
+      container: (args: string[]) => spawn(this.name, ["container", ...args]),
+      images: (args: string[]) => spawn(this.name, ["images", ...args]),
+      exec: (args: string[]) => spawn(this.name, ["exec", ...args]),
+      build: (args: string[]) => spawn(this.name, ["build", ...args]),
+      pull: (args: string[]) => spawn(this.name, ["pull", ...args]),
+      push: (args: string[]) => spawn(this.name, ["push", ...args]),
+      search: (args: string[]) => spawn(this.name, ["search", ...args]),
+      version: (args: string[]) => spawn(this.name, ["version", ...args]),
+      info: (args: string[]) => spawn(this.name, ["info", ...args]),
       help: () => {
         console.log(`Common Commands:
         run         Create and run a new container from an image
