@@ -9,6 +9,7 @@ import Bun from "./plugins/bun.ts";
 import Pkgx from "./plugins/pkgx.ts";
 import Pulumi from "./plugins/pulumi.ts";
 import Tilt from "./plugins/tilt.ts";
+import Spin from "./plugins/spin.ts";
 
 const plugins = [
   new Docker(),
@@ -20,6 +21,7 @@ const plugins = [
   new Pkgx(),
   new Pulumi(),
   new Tilt(),
+  new Spin(),
 ];
 
 const history: string[] = [];
