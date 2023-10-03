@@ -2,8 +2,9 @@ import { Input } from "https://deno.land/x/cliffy@v1.0.0-rc.3/prompt/mod.ts";
 import { green, cyan } from "https://deno.land/std@0.203.0/fmt/colors.ts";
 
 import Docker from "./docker.ts";
+import GithubCLI from "./githubCLI.ts";
 
-const plugins = [new Docker()];
+const plugins = [new Docker(), new GithubCLI()];
 
 const history: string[] = [];
 
@@ -46,22 +47,23 @@ async function repl(
   }
 
   if (command.startsWith("use ")) {
-    const plugin = command.split(" ")[1];
-    if (plugins.find((p) => p.name === plugin)) {
-      const plugin = new Docker();
-      history.push(`use ${plugin.name}`);
+    const pluginName = command.split(" ")[1];
+    const selectedPlugin = plugins.find((p) => p.name === pluginName);
+    if (selectedPlugin) {
+      history.push(`use ${selectedPlugin.name}`);
       repl(
-        plugin.name,
-        [...Object.keys(plugin.commands), ...history],
-        (command: string) => new Docker().evaluate(command)
+        selectedPlugin.name,
+        [...Object.keys(selectedPlugin.commands), ...history],
+        (command: string) => selectedPlugin.evaluate(command)  // Step 3: Update Evaluation Logic
       );
       return;
     } else {
-      console.log(`plugin ${green(plugin)} not found`);
+      console.log(`plugin ${green(pluginName)} not found`);
     }
     repl(message, suggestions, evaluate);
     return;
-  }
+}
+
 
   if (evaluate) {
     history.push(command);
