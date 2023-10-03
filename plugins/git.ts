@@ -1,5 +1,5 @@
-import { spawn } from "./helpers.ts";
-import Plugin from "./plugin.ts";
+import { spawn } from "../src/helpers.ts";
+import Plugin from "../src/plugin.ts";
 
 class Git implements Plugin {
   name = "git";
