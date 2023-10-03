@@ -2,8 +2,8 @@ import { Input } from "https://deno.land/x/cliffy@v1.0.0-rc.3/prompt/mod.ts";
 import { green, cyan } from "https://deno.land/std@0.203.0/fmt/colors.ts";
 
 import Docker from "./docker.ts";
-import Git from "./git.js";
-import GithubCLI from "./githubCLI.ts";
+import Git from "./git.ts";
+import GithubCLI from "./github-cli.ts";
 
 const plugins = [new Docker(), new Git(), new GithubCLI()];
 
@@ -63,8 +63,7 @@ async function repl(
     }
     repl(message, suggestions, evaluate);
     return;
-}
-
+  }
 
   if (evaluate) {
     history.push(command);
