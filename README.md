@@ -17,6 +17,7 @@ Currently available plugins:
 - [Bun](https://bun.sh)
 - [Pkgx](https://pkgx.sh)
 - [Pulumi](https://pulumi.com)
+- [Tilt](https://tilt.dev/)
   
 ## 🚚 Installation
 
