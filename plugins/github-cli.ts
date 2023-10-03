@@ -1,10 +1,10 @@
-import { spawn } from "./helpers.ts";
-import Plugin from "./plugin.ts";
+import { spawn } from "../src/helpers.ts";
+import Plugin from "../src/plugin.ts";
 
 class GithubCLI implements Plugin {
   name = "gh";
   commands: Record<string, (params: string[]) => Promise<void>>;
-  
+
   constructor() {
     this.commands = {
       pr: (args: string[]) => spawn(this.name, ["pr", ...args]),
