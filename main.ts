@@ -3,8 +3,9 @@ import { green, cyan } from "https://deno.land/std@0.203.0/fmt/colors.ts";
 
 import Docker from "./docker.ts";
 import Git from "./git.js";
+import GithubCLI from "./githubCLI.ts";
 
-const plugins = [new Docker(), new Git()];
+const plugins = [new Docker(), new Git(), new GithubCLI()];
 
 const history: string[] = [];
 
@@ -47,8 +48,8 @@ async function repl(
   }
 
   if (command.startsWith("use ")) {
-    const plugin = command.split(" ")[1];
-    const selectedPlugin = plugins.find((p) => p.name === plugin);
+    const pluginName = command.split(" ")[1];
+    const selectedPlugin = plugins.find((p) => p.name === pluginName);
     if (selectedPlugin) {
       history.push(`use ${selectedPlugin.name}`);
       repl(
@@ -58,11 +59,12 @@ async function repl(
       );
       return;
     } else {
-      console.log(`plugin ${green(plugin)} not found`);
+      console.log(`plugin ${green(pluginName)} not found`);
     }
     repl(message, suggestions, evaluate);
     return;
-  }
+}
+
 
   if (evaluate) {
     history.push(command);
