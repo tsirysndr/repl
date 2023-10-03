@@ -14,6 +14,7 @@ Currently available plugins:
 - [Git](https://git-scm.com/)
 - [Terraform](https://terraform.io/)
 - [Homebrew](https://brew.sh/)
+- [Bun](https://bun.sh)
   
 ## 🚚 Installation
 
