@@ -25,10 +25,11 @@ const plugins = [
 ];
 
 const history: string[] = [];
+const useSuggestions = plugins.map((p) => `use ${p.name}`);
 
 async function repl(
   message = "",
-  suggestions = ["use", "help", "list", "exit", ...history],
+  suggestions = ["use", "help", "list", "exit", ...history, ...useSuggestions],
   evaluate?: (command: string) => Promise<void>
 ) {
   const command = await Input.prompt({
@@ -71,7 +72,11 @@ async function repl(
       history.push(`use ${selectedPlugin.name}`);
       repl(
         selectedPlugin.name,
-        [...Object.keys(selectedPlugin.commands), ...history],
+        [
+          ...Object.keys(selectedPlugin.commands),
+          ...history,
+          ...useSuggestions,
+        ],
         (command: string) => selectedPlugin.evaluate(command)
       );
       return;
