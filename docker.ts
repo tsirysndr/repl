@@ -17,6 +17,7 @@ class Docker implements Plugin {
       search: (args: string[]) => spawn(this.name, ["search", ...args]),
       version: (args: string[]) => spawn(this.name, ["version", ...args]),
       info: (args: string[]) => spawn(this.name, ["info", ...args]),
+      compose: (args: string[]) => spawn(this.name, ["compose", ...args]),
       help: () => {
         console.log(`Common Commands:
         run         Create and run a new container from an image
@@ -30,7 +31,8 @@ class Docker implements Plugin {
         logout      Log out from a registry
         search      Search Docker Hub for images
         version     Show the Docker version information
-        info        Display system-wide information`);
+        info        Display system-wide information
+        compose     Docker Compose`);
         return Promise.resolve();
       },
     };
