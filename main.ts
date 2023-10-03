@@ -2,9 +2,10 @@ import { Input } from "https://deno.land/x/cliffy@v1.0.0-rc.3/prompt/mod.ts";
 import { green, cyan } from "https://deno.land/std@0.203.0/fmt/colors.ts";
 
 import Docker from "./docker.ts";
+import Git from "./git.js";
 import GithubCLI from "./githubCLI.ts";
 
-const plugins = [new Docker(), new GithubCLI()];
+const plugins = [new Docker(), new Git(), new GithubCLI()];
 
 const history: string[] = [];
 
@@ -54,7 +55,7 @@ async function repl(
       repl(
         selectedPlugin.name,
         [...Object.keys(selectedPlugin.commands), ...history],
-        (command: string) => selectedPlugin.evaluate(command)  // Step 3: Update Evaluation Logic
+        (command: string) => selectedPlugin.evaluate(command)
       );
       return;
     } else {
