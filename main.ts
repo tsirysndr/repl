@@ -8,6 +8,7 @@ import Brew from "./plugins/brew.ts";
 import Bun from "./plugins/bun.ts";
 import Pkgx from "./plugins/pkgx.ts";
 import Pulumi from "./plugins/pulumi.ts";
+import Tilt from "./plugins/tilt.ts";
 
 const plugins = [
   new Docker(),
@@ -18,6 +19,7 @@ const plugins = [
   new Bun(),
   new Pkgx(),
   new Pulumi(),
+  new Tilt(),
 ];
 
 const history: string[] = [];
