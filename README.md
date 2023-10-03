@@ -12,6 +12,7 @@ Currently available plugins:
 - [Github CLI](https://cli.github.com/)
 - [Git](https://git-scm.com/)
 - [Terraform](https://terraform.io/)
+- [Homebrew](https://brew.sh/)
   
 ## 🚚 Installation
 
