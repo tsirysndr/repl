@@ -77,7 +77,7 @@ async function repl(
 
 // Learn more at https://deno.land/manual/examples/module_metadata#concepts
 if (import.meta.main) {
-  console.log("Repl v0.2.1 🚀 ✨");
+  console.log("Repl v0.3.0 🚀 ✨");
   console.log("exit using ctrl+c, or exit, type help for more info");
   repl();
 }
