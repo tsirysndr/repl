@@ -3,8 +3,9 @@ import { Input, green, cyan } from "./deps.ts";
 import Docker from "./plugins/docker.ts";
 import Git from "./plugins/git.ts";
 import GithubCLI from "./plugins/github-cli.ts";
+import Terraform from "./plugins/terraform.ts";
 
-const plugins = [new Docker(), new Git(), new GithubCLI()];
+const plugins = [new Docker(), new Git(), new GithubCLI(), new Terraform()];
 
 const history: string[] = [];
 
