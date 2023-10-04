@@ -19,6 +19,7 @@ Currently available plugins:
 - [Pulumi](https://pulumi.com)
 - [Tilt](https://tilt.dev/)
 - [Spin](https://developer.fermyon.com/spin/index)
+- [Wasmer](https://wasmer.io/)
 
 ## 🚚 Installation
 
