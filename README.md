@@ -28,6 +28,7 @@ Currently available plugins:
 - [Deno](https://docs.deno.com/runtime/manual/tools)
 - [Bazel](https://bazel.build/)
 - [Asdf](https://asdf-vm.com/)
+- [Terragrunt](https://terragrunt.gruntwork.io/)
 
 ## 🚚 Installation
 
