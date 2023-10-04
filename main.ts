@@ -10,6 +10,7 @@ import Pkgx from "./plugins/pkgx.ts";
 import Pulumi from "./plugins/pulumi.ts";
 import Tilt from "./plugins/tilt.ts";
 import Spin from "./plugins/spin.ts";
+import Wasmer from "./plugins/wasmer.ts";
 
 const plugins = [
   new Docker(),
@@ -22,6 +23,7 @@ const plugins = [
   new Pulumi(),
   new Tilt(),
   new Spin(),
+  new Wasmer(),
 ];
 
 const history: string[] = [];
