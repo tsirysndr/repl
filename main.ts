@@ -16,6 +16,7 @@ import Helm from "./plugins/helm.ts";
 import Devbox from "./plugins/devbox.ts";
 import Kubectl from "./plugins/kubectl.ts";
 import Deno from "./plugins/deno.ts";
+import Bazel from "./plugins/bazel.ts";
 
 const plugins = [
   new Docker(),
@@ -34,6 +35,7 @@ const plugins = [
   new Devbox(),
   new Kubectl(),
   new Deno(),
+  new Bazel(),
 ];
 
 const history: string[] = [];
