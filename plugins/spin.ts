@@ -60,7 +60,10 @@ class Spin implements Plugin {
   }
 
   async install(): Promise<void> {
-    // TODO: install spin
+    await spawn("sh", [
+      "-c",
+      "type spin || (cd /usr/local/bin && curl -fsSL https://developer.fermyon.com/downloads/install.sh | sudo bash)",
+    ]);
   }
 }
 
