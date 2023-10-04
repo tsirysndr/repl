@@ -24,6 +24,7 @@ Currently available plugins:
 - [Helm](https://helm.sh/)
 - [Devbox](https://www.jetpack.io/devbox/)
 - [Kubectl](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+- [Deno](https://docs.deno.com/runtime/manual/tools)
 
 ## 🚚 Installation
 
