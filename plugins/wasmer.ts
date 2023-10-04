@@ -74,6 +74,10 @@ class Wasmer implements Plugin {
     }
     console.log("Command not found");
   }
+
+  async install(): Promise<void> {
+    // TODO: install wasmer
+  }
 }
 
 export default Wasmer;

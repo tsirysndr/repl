@@ -84,6 +84,7 @@ async function repl(
     const selectedPlugin = plugins.find((p) => p.name === pluginName);
     if (selectedPlugin) {
       history.push(`use ${selectedPlugin.name}`);
+      await selectedPlugin.install();
       repl(
         selectedPlugin.name,
         [

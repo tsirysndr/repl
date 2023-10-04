@@ -1,5 +1,6 @@
 import { spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
+import Brew from "./brew.ts";
 
 class Pulumi implements Plugin {
   name = "pulumi";
@@ -88,6 +89,11 @@ class Pulumi implements Plugin {
       return;
     }
     console.log("Command not found");
+  }
+
+  async install(): Promise<void> {
+    await new Brew().install();
+    await spawn("sh", ["-c", "type pulumi || brew install pulumi"]);
   }
 }
 

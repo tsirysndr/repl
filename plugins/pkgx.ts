@@ -30,6 +30,10 @@ class Pkgx implements Plugin {
     }
     await spawn(this.name, [cmd, ...params]);
   }
+
+  async install() {
+    await spawn("sh", ["-c", "type pkgx || curl -fsS https://pkgx.sh | sh"]);
+  }
 }
 
 export default Pkgx;

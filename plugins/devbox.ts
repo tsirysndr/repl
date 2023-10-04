@@ -58,6 +58,13 @@ class Devbox implements Plugin {
     }
     console.log("Command not found");
   }
+
+  async install(): Promise<void> {
+    await spawn("sh", [
+      "-c",
+      "type devbox || curl -fsSL https://get.jetpack.io/devbox | bash",
+    ]);
+  }
 }
 
 export default Devbox;

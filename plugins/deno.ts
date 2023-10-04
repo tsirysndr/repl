@@ -1,5 +1,6 @@
 import { spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
+import Brew from "./brew.ts";
 
 class Deno implements Plugin {
   name = "deno";
@@ -54,6 +55,11 @@ class Deno implements Plugin {
       return;
     }
     console.log("Command not found");
+  }
+
+  async install(): Promise<void> {
+    await new Brew().install();
+    await spawn("sh", ["-c", "type deno || brew install deno"]);
   }
 }
 

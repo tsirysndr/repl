@@ -58,6 +58,10 @@ class Spin implements Plugin {
     }
     console.log("Command not found");
   }
+
+  async install(): Promise<void> {
+    // TODO: install spin
+  }
 }
 
 export default Spin;

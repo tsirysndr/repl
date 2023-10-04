@@ -1,5 +1,6 @@
 import { spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
+import Brew from "./brew.ts";
 
 class Bun implements Plugin {
   name = "bun";
@@ -54,6 +55,11 @@ class Bun implements Plugin {
       return;
     }
     console.log("Command not found");
+  }
+
+  async install(): Promise<void> {
+    await new Brew().install();
+    await spawn("sh", ["-c", "type bun || brew install bun"]);
   }
 }
 
