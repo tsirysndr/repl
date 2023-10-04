@@ -22,6 +22,7 @@ Currently available plugins:
 - [Wasmer](https://wasmer.io/)
 - [Dagger](https://dagger.io/)
 - [Helm](https://helm.sh/)
+- [Devbox](https://www.jetpack.io/devbox/)
 
 ## 🚚 Installation
 
