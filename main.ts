@@ -11,6 +11,7 @@ import Pulumi from "./plugins/pulumi.ts";
 import Tilt from "./plugins/tilt.ts";
 import Spin from "./plugins/spin.ts";
 import Wasmer from "./plugins/wasmer.ts";
+import Dagger from "./plugins/dagger.ts";
 
 const plugins = [
   new Docker(),
@@ -24,6 +25,7 @@ const plugins = [
   new Tilt(),
   new Spin(),
   new Wasmer(),
+  new Dagger(),
 ];
 
 const history: string[] = [];

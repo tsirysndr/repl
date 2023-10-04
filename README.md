@@ -20,6 +20,7 @@ Currently available plugins:
 - [Tilt](https://tilt.dev/)
 - [Spin](https://developer.fermyon.com/spin/index)
 - [Wasmer](https://wasmer.io/)
+- [Dagger](https://dagger.io/)
 
 ## 🚚 Installation
 
