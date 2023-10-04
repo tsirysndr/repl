@@ -23,6 +23,7 @@ Currently available plugins:
 - [Dagger](https://dagger.io/)
 - [Helm](https://helm.sh/)
 - [Devbox](https://www.jetpack.io/devbox/)
+- [Kubectl](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 
 ## 🚚 Installation
 
