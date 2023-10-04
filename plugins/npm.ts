@@ -1,5 +1,6 @@
 import { spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
+import Brew from "./brew.ts";
 
 class Npm implements Plugin {
   name = "npm";
@@ -155,6 +156,11 @@ class Npm implements Plugin {
     }
 
     console.log("Command not found");
+  }
+
+  async install(): Promise<void> {
+    await new Brew().install();
+    await spawn("sh", ["-c", "type npm > /dev/null || brew install npm"]);
   }
 }
 export default Npm;
