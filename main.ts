@@ -15,6 +15,7 @@ import Dagger from "./plugins/dagger.ts";
 import Helm from "./plugins/helm.ts";
 import Devbox from "./plugins/devbox.ts";
 import Kubectl from "./plugins/kubectl.ts";
+import Npm from "./plugins/npm.ts";
 
 const plugins = [
   new Docker(),
@@ -32,6 +33,7 @@ const plugins = [
   new Helm(),
   new Devbox(),
   new Kubectl(),
+  new Npm(),
 ];
 
 const history: string[] = [];
