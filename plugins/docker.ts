@@ -49,6 +49,10 @@ class Docker implements Plugin {
     }
     console.log("Command not found");
   }
+
+  async install(): Promise<void> {
+    // TODO: install docker
+  }
 }
 
 export default Docker;
