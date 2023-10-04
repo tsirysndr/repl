@@ -22,7 +22,7 @@ class Bun implements Plugin {
       build: (args: string[]) => spawn(this.name, ["build", ...args]),
       upgrade: (args: string[]) => spawn(this.name, ["upgrade", ...args]),
       help: () => {
-        console.log(`Common Commands:
+        console.log(`    Common Commands:
         run       Run JavaScript/TypeScript files or a package.json script
         test      Run unit tests with Jest-compatible test runner
         x         Install and execute a package bin (bunx)
@@ -43,7 +43,6 @@ class Bun implements Plugin {
       },
     };
   }
-
 
   async evaluate(command: string): Promise<void> {
     const [cmd, ...params] = command.split(" ");

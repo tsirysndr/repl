@@ -34,8 +34,7 @@ class Pulumi implements Plugin {
       watch: (args: string[]) => spawn(this.name, ["watch", ...args]),
       logs: (args: string[]) => spawn(this.name, ["logs", ...args]),
       help: () => {
-        console.log(`
-        Stack Management Commands:
+        console.log(`      Stack Management Commands:
           new                   Create a new Pulumi project
           config                Manage configuration
           stack                 Manage stacks

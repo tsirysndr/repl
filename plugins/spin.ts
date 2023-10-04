@@ -23,8 +23,7 @@ class Spin implements Plugin {
       watch: (args: string[]) => spawn(this.name, ["watch", ...args]),
       version: (args: string[]) => spawn(this.name, ["--version", ...args]),
       help: () => {
-        console.log(`
-      Available Commands:
+        console.log(`    Available Commands:
         add          Scaffold a new component into an existing application
         build        Build the Spin application
         cloud*       Commands for publishing applications to the Fermyon Cloud.

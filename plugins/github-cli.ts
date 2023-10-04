@@ -13,7 +13,7 @@ class GithubCLI implements Plugin {
       gist: (args: string[]) => spawn(this.name, ["gist", ...args]),
       auth: (args: string[]) => spawn(this.name, ["auth", ...args]),
       help: () => {
-        console.log(`Common GitHub CLI Commands:
+        console.log(`    Common GitHub CLI Commands:
         pr      Work with pull requests
         repo    Create, clone, fork, and view repositories
         issue   Create and manage issues

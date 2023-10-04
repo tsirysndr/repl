@@ -41,7 +41,7 @@ class Tilt implements Plugin {
       version: (args: string[]) => spawn(this.name, ["version", ...args]),
       wait: (args: string[]) => spawn(this.name, ["wait", ...args]),
       help: () => {
-        console.log(`Available Commands:
+        console.log(`    Available Commands:
         alpha          unstable/advanced commands still in alpha
         analytics      info and status about tilt-dev analytics
         api-resources  Print the supported API resources

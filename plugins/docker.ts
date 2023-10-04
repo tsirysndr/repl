@@ -19,7 +19,7 @@ class Docker implements Plugin {
       info: (args: string[]) => spawn(this.name, ["info", ...args]),
       compose: (args: string[]) => spawn(this.name, ["compose", ...args]),
       help: () => {
-        console.log(`Common Commands:
+        console.log(`    Common Commands:
         run         Create and run a new container from an image
         exec        Execute a command in a running container
         ps          List containers

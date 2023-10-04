@@ -17,7 +17,7 @@ class Git implements Plugin {
       merge: (args: string[]) => spawn(this.name, ["merge", ...args]),
       tag: (args: string[]) => spawn(this.name, ["tag", ...args]),
       help: () => {
-        console.log(`Git Commands:
+        console.log(`    Git Commands:
         clone       Clone a repository into a new directory
         pull        Fetch from and integrate with another repository or a local branch
         push        Update remote refs along with associated objects

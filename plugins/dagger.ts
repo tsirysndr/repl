@@ -13,8 +13,7 @@ class Dagger implements Plugin {
       run: (args: string[]) => spawn(this.name, ["run", ...args]),
       version: (args: string[]) => spawn(this.name, ["version", ...args]),
       help: () => {
-        console.log(`
-        Available Commands:
+        console.log(`    Available Commands:
           help        Help about any command
           login       Log in to Dagger Cloud
           logout      Log out from Dagger Cloud
