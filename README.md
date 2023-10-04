@@ -26,6 +26,7 @@ Currently available plugins:
 - [Kubectl](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [Deno](https://docs.deno.com/runtime/manual/tools)
 - [Bazel](https://bazel.build/)
+- [Asdf](https://asdf-vm.com/)
 
 ## 🚚 Installation
 

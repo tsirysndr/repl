@@ -17,6 +17,7 @@ import Devbox from "./plugins/devbox.ts";
 import Kubectl from "./plugins/kubectl.ts";
 import Deno from "./plugins/deno.ts";
 import Bazel from "./plugins/bazel.ts";
+import Asdf from "./plugins/asdf.ts";
 
 const plugins = [
   new Docker(),
@@ -36,6 +37,7 @@ const plugins = [
   new Kubectl(),
   new Deno(),
   new Bazel(),
+  new Asdf(),
 ];
 
 const history: string[] = [];
