@@ -1,5 +1,6 @@
 import { spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
+import Brew from "./brew.ts";
 
 class Tilt implements Plugin {
   name = "tilt";
@@ -89,6 +90,11 @@ class Tilt implements Plugin {
       return;
     }
     console.log("Command not found");
+  }
+
+  async install(): Promise<void> {
+    await new Brew().install();
+    await spawn("sh", ["-c", "type tilt > /dev/null || brew install tilt"]);
   }
 }
 

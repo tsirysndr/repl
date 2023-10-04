@@ -57,6 +57,21 @@ class Brew implements Plugin {
     }
     console.log("Command not found");
   }
+
+  async install() {
+    await spawn("sh", [
+      "-c",
+      'type brew > /dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"',
+    ]);
+    Deno.env.set(
+      "PATH",
+      `${Deno.env.get("PATH")}:/home/linuxbrew/.linuxbrew/bin`
+    );
+    Deno.env.set(
+      "PATH",
+      `${Deno.env.get("PATH")}:/home/linuxbrew/.linuxbrew/sbin`
+    );
+  }
 }
 
 export default Brew;

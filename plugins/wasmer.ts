@@ -74,6 +74,15 @@ class Wasmer implements Plugin {
     }
     console.log("Command not found");
   }
+
+  async install(): Promise<void> {
+    await spawn("sh", [
+      "-c",
+      "type wasmer > /dev/null || curl https://get.wasmer.io -sSfL | sh",
+    ]);
+    Deno.env.set("WASMER_DIR", "~/.wasmer");
+    Deno.env.set("PATH", "~/.wasmer/bin:" + Deno.env.get("PATH"));
+  }
 }
 
 export default Wasmer;

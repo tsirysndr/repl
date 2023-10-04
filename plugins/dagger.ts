@@ -36,6 +36,13 @@ class Dagger implements Plugin {
     }
     console.log("Command not found");
   }
+
+  async install(): Promise<void> {
+    await spawn("sh", [
+      "-c",
+      "type dagger > /dev/null || (cd /usr/local && curl -L https://dl.dagger.io/dagger/install.sh | sudo sh)",
+    ]);
+  }
 }
 
 export default Dagger;

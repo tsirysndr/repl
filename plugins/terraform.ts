@@ -1,5 +1,6 @@
 import { spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
+import Brew from "./brew.ts";
 
 class Terraform implements Plugin {
   name = "terraform";
@@ -13,7 +14,8 @@ class Terraform implements Plugin {
       destroy: (args: string[]) => spawn(this.name, ["destroy", ...args]),
       console: (args: string[]) => spawn(this.name, ["console", ...args]),
       fmt: (args: string[]) => spawn(this.name, ["fmt", ...args]),
-      force_unlock: (args: string[]) => spawn(this.name, ["force-unlock", ...args]),
+      force_unlock: (args: string[]) =>
+        spawn(this.name, ["force-unlock", ...args]),
       get: (args: string[]) => spawn(this.name, ["get", ...args]),
       graph: (args: string[]) => spawn(this.name, ["graph", ...args]),
       import: (args: string[]) => spawn(this.name, ["import", ...args]),
@@ -73,6 +75,14 @@ class Terraform implements Plugin {
       return;
     }
     console.log("Command not found");
+  }
+
+  async install(): Promise<void> {
+    await new Brew().install();
+    await spawn("sh", [
+      "-c",
+      "type terraform > /dev/null || brew install terraform",
+    ]);
   }
 }
 
