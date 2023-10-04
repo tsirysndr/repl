@@ -13,6 +13,7 @@ import Spin from "./plugins/spin.ts";
 import Wasmer from "./plugins/wasmer.ts";
 import Dagger from "./plugins/dagger.ts";
 import Helm from "./plugins/helm.ts";
+import Devbox from "./plugins/devbox.ts";
 
 const plugins = [
   new Docker(),
@@ -28,6 +29,7 @@ const plugins = [
   new Wasmer(),
   new Dagger(),
   new Helm(),
+  new Devbox(),
 ];
 
 const history: string[] = [];
