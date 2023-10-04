@@ -21,6 +21,7 @@ Currently available plugins:
 - [Spin](https://developer.fermyon.com/spin/index)
 - [Wasmer](https://wasmer.io/)
 - [Dagger](https://dagger.io/)
+- [Helm](https://helm.sh/)
 
 ## 🚚 Installation
 

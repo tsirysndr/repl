@@ -34,8 +34,7 @@ class Wasmer implements Plugin {
       namespace: (args: string[]) => spawn(this.name, ["namespace", ...args]),
       version: (args: string[]) => spawn(this.name, ["--version", ...args]),
       help: () => {
-        console.log(`
-      Commands:
+        console.log(`    Commands:
         login         Login into a wasmer.io-like registry
         publish       Login into a wasmer.io-like registry
         cache         Wasmer cache

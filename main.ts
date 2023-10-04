@@ -12,6 +12,7 @@ import Tilt from "./plugins/tilt.ts";
 import Spin from "./plugins/spin.ts";
 import Wasmer from "./plugins/wasmer.ts";
 import Dagger from "./plugins/dagger.ts";
+import Helm from "./plugins/helm.ts";
 
 const plugins = [
   new Docker(),
@@ -26,6 +27,7 @@ const plugins = [
   new Spin(),
   new Wasmer(),
   new Dagger(),
+  new Helm(),
 ];
 
 const history: string[] = [];
