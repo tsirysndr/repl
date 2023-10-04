@@ -112,12 +112,9 @@ class Asdf implements Plugin {
     await new Brew().install();
 
     // asdf primarily requires `git` & `curl`.
-    await spawn("sh", [
-      "-c",
-      "type git || brew install git",
-      "type curl || brew install curl",
-      "type asdf || brew install asdf",
-    ]);
+    await spawn("sh", ["-c", "type git > /dev/null || brew install git"]);
+    await spawn("sh", ["-c", "type curl > /dev/null || brew install curl"]);
+    await spawn("sh", ["-c", "type asdf > /dev/null || brew install asdf"]);
   }
 }
 
