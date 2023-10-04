@@ -25,6 +25,9 @@ Currently available plugins:
 - [Devbox](https://www.jetpack.io/devbox/)
 - [Kubectl](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 - [Npm](https://docs.npmjs.com/cli/v10/commands)
+- [Deno](https://docs.deno.com/runtime/manual/tools)
+- [Bazel](https://bazel.build/)
+- [Asdf](https://asdf-vm.com/)
 
 ## 🚚 Installation
 

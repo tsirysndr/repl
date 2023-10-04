@@ -58,6 +58,13 @@ class Spin implements Plugin {
     }
     console.log("Command not found");
   }
+
+  async install(): Promise<void> {
+    await spawn("sh", [
+      "-c",
+      "type spin > /dev/null || (cd /usr/local/bin && curl -fsSL https://developer.fermyon.com/downloads/install.sh | sudo bash)",
+    ]);
+  }
 }
 
 export default Spin;

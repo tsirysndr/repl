@@ -16,6 +16,9 @@ import Helm from "./plugins/helm.ts";
 import Devbox from "./plugins/devbox.ts";
 import Kubectl from "./plugins/kubectl.ts";
 import Npm from "./plugins/npm.ts";
+import Deno from "./plugins/deno.ts";
+import Bazel from "./plugins/bazel.ts";
+import Asdf from "./plugins/asdf.ts";
 
 const plugins = [
   new Docker(),
@@ -34,6 +37,9 @@ const plugins = [
   new Devbox(),
   new Kubectl(),
   new Npm(),
+  new Deno(),
+  new Bazel(),
+  new Asdf(),
 ];
 
 const history: string[] = [];
@@ -82,6 +88,7 @@ async function repl(
     const selectedPlugin = plugins.find((p) => p.name === pluginName);
     if (selectedPlugin) {
       history.push(`use ${selectedPlugin.name}`);
+      await selectedPlugin.install();
       repl(
         selectedPlugin.name,
         [

@@ -1,5 +1,6 @@
 import { spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
+import Brew from "./brew.ts";
 
 class GithubCLI implements Plugin {
   name = "gh";
@@ -34,6 +35,11 @@ class GithubCLI implements Plugin {
       return;
     }
     console.log("Command not found");
+  }
+
+  async install(): Promise<void> {
+    await new Brew().install();
+    await spawn("sh", ["-c", "type gh > /dev/null || brew install gh"]);
   }
 }
 
