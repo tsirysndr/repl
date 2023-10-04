@@ -61,7 +61,7 @@ class Brew implements Plugin {
   async install() {
     await spawn("sh", [
       "-c",
-      'type brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"',
+      'type brew > /dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"',
     ]);
     Deno.env.set(
       "PATH",

@@ -32,7 +32,10 @@ class Pkgx implements Plugin {
   }
 
   async install() {
-    await spawn("sh", ["-c", "type pkgx || curl -fsS https://pkgx.sh | sh"]);
+    await spawn("sh", [
+      "-c",
+      "type pkgx > /dev/null || curl -fsS https://pkgx.sh | sh",
+    ]);
   }
 }
 

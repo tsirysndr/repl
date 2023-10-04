@@ -39,7 +39,7 @@ class GithubCLI implements Plugin {
 
   async install(): Promise<void> {
     await new Brew().install();
-    await spawn("sh", ["-c", "type gh || brew install gh"]);
+    await spawn("sh", ["-c", "type gh > /dev/null || brew install gh"]);
   }
 }
 

@@ -94,7 +94,7 @@ class Tilt implements Plugin {
 
   async install(): Promise<void> {
     await new Brew().install();
-    await spawn("sh", ["-c", "type tilt || brew install tilt"]);
+    await spawn("sh", ["-c", "type tilt > /dev/null || brew install tilt"]);
   }
 }
 

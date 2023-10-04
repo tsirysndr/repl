@@ -76,7 +76,7 @@ class Git implements Plugin {
 
   async install(): Promise<void> {
     await new Brew().install();
-    await spawn("sh", ["-c", "type git || brew install git"]);
+    await spawn("sh", ["-c", "type git > /dev/null || brew install git"]);
   }
 }
 

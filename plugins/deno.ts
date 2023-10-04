@@ -59,7 +59,7 @@ class Deno implements Plugin {
 
   async install(): Promise<void> {
     await new Brew().install();
-    await spawn("sh", ["-c", "type deno || brew install deno"]);
+    await spawn("sh", ["-c", "type deno > /dev/null || brew install deno"]);
   }
 }
 

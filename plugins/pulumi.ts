@@ -93,7 +93,7 @@ class Pulumi implements Plugin {
 
   async install(): Promise<void> {
     await new Brew().install();
-    await spawn("sh", ["-c", "type pulumi || brew install pulumi"]);
+    await spawn("sh", ["-c", "type pulumi > /dev/null || brew install pulumi"]);
   }
 }
 

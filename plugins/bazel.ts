@@ -74,7 +74,10 @@ class Bazel implements Plugin {
 
   async install(): Promise<void> {
     await new Brew().install();
-    await spawn("sh", ["-c", "type bazelisk || brew install bazelisk"]);
+    await spawn("sh", [
+      "-c",
+      "type bazelisk > /dev/null || brew install bazelisk",
+    ]);
   }
 }
 

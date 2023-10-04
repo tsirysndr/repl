@@ -79,7 +79,10 @@ class Terraform implements Plugin {
 
   async install(): Promise<void> {
     await new Brew().install();
-    await spawn("sh", ["-c", "type terraform || brew install terraform"]);
+    await spawn("sh", [
+      "-c",
+      "type terraform > /dev/null || brew install terraform",
+    ]);
   }
 }
 

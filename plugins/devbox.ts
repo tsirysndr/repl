@@ -62,7 +62,7 @@ class Devbox implements Plugin {
   async install(): Promise<void> {
     await spawn("sh", [
       "-c",
-      "type devbox || curl -fsSL https://get.jetpack.io/devbox | bash",
+      "type devbox > /dev/null || curl -fsSL https://get.jetpack.io/devbox | bash",
     ]);
   }
 }

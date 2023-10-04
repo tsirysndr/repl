@@ -78,7 +78,7 @@ class Wasmer implements Plugin {
   async install(): Promise<void> {
     await spawn("sh", [
       "-c",
-      "type wasmer || curl https://get.wasmer.io -sSfL | sh",
+      "type wasmer > /dev/null || curl https://get.wasmer.io -sSfL | sh",
     ]);
     Deno.env.set("WASMER_DIR", "~/.wasmer");
     Deno.env.set("PATH", "~/.wasmer/bin:" + Deno.env.get("PATH"));

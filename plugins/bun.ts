@@ -59,7 +59,7 @@ class Bun implements Plugin {
 
   async install(): Promise<void> {
     await new Brew().install();
-    await spawn("sh", ["-c", "type bun || brew install bun"]);
+    await spawn("sh", ["-c", "type bun > /dev/null || brew install bun"]);
   }
 }
 

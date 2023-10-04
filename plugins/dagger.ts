@@ -40,7 +40,7 @@ class Dagger implements Plugin {
   async install(): Promise<void> {
     await spawn("sh", [
       "-c",
-      "type dagger || (cd /usr/local && curl -L https://dl.dagger.io/dagger/install.sh | sudo sh)",
+      "type dagger > /dev/null || (cd /usr/local && curl -L https://dl.dagger.io/dagger/install.sh | sudo sh)",
     ]);
   }
 }

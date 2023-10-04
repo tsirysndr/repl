@@ -78,7 +78,7 @@ class Helm implements Plugin {
 
   async install(): Promise<void> {
     await new Brew().install();
-    await spawn("sh", ["-c", "type helm || brew install helm"]);
+    await spawn("sh", ["-c", "type helm > /dev/null || brew install helm"]);
   }
 }
 

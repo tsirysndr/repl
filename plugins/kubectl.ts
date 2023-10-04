@@ -140,7 +140,10 @@ class Kubectl implements Plugin {
 
   async install(): Promise<void> {
     await new Brew().install();
-    await spawn("sh", ["-c", "type kubectl || brew install kubernetes-cli"]);
+    await spawn("sh", [
+      "-c",
+      "type kubectl > /dev/null || brew install kubernetes-cli",
+    ]);
   }
 }
 
