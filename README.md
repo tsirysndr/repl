@@ -52,3 +52,4 @@ Currently available plugins:
 - [Asdf](https://asdf-vm.com/)
 - [Terragrunt](https://terragrunt.gruntwork.io/)
 - [Podman](https://podman.io/)
+- [Nix](https://nixos.org/)
