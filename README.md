@@ -1,4 +1,10 @@
-# Repl CLI
+<p align="center">
+  <img 
+    src="repl-banner.png"
+    alt="Repl CLI"
+    style="width:100%;"
+  />
+</p>
 
 [![FlakeHub](https://img.shields.io/endpoint?url=https://flakehub.com/f/tsirysndr/repl/badge)](https://flakehub.com/flake/tsirysndr/repl)
 [![deno module](https://shield.deno.dev/x/repl)](https://deno.land/x/repl)
