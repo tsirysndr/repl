@@ -22,6 +22,7 @@
     "https://deno.land/std@0.203.0/fmt/colors.ts": "c51c4642678eb690dcf5ffee5918b675bf01a33fba82acf303701ae1a4f8c8d9",
     "https://deno.land/x/cliffy@v1.0.0-rc.3/_utils/distance.ts": "02af166952c7c358ac83beae397aa2fbca4ad630aecfcd38d92edb1ea429f004",
     "https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/ansi_escapes.ts": "193b3c3a4e520274bd8322ca4cab1c3ce38070bed1898cb2ade12a585dddd7c9",
+    "https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/chain.ts": "eca61b1b64cad7b9799490c12c7aa5538d0f63ac65a73ddb6acac8b35f0a5323",
     "https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/cursor_position.ts": "caa008d29f7a904908bda514f9839bfbb7a93f2d5f5580501675b646d26a87ff",
     "https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/deps.ts": "f48ae5d066684793f4a203524db2a9fd61f514527934b458006f3e57363c0215",
     "https://deno.land/x/cliffy@v1.0.0-rc.3/ansi/tty.ts": "155aacdcb7dc00f3f95352616a2415c622ffb88db51c5934e5d2e8341eab010b",
