@@ -80,8 +80,11 @@ class Wasmer implements Plugin {
       "-c",
       "type wasmer > /dev/null || curl https://get.wasmer.io -sSfL | sh",
     ]);
-    Deno.env.set("WASMER_DIR", "~/.wasmer");
-    Deno.env.set("PATH", "~/.wasmer/bin:" + Deno.env.get("PATH"));
+    Deno.env.set("WASMER_DIR", `${Deno.env.get("HOME")}/.wasmer`);
+    Deno.env.set(
+      "PATH",
+      `"${Deno.env.get("HOME")}/.wasmer/bin:${Deno.env.get("PATH")}`
+    );
   }
 }
 
