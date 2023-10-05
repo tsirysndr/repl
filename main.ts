@@ -20,6 +20,7 @@ import Deno from "./plugins/deno.ts";
 import Bazel from "./plugins/bazel.ts";
 import Asdf from "./plugins/asdf.ts";
 import Terragrunt from "./plugins/terragrunt.ts";
+import Podman from "./plugins/podman.ts";
 
 const plugins = [
   new Docker(),
@@ -42,6 +43,7 @@ const plugins = [
   new Bazel(),
   new Asdf(),
   new Terragrunt(),
+  new Podman(),
 ];
 
 const history: string[] = [];
