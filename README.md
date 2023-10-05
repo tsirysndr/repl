@@ -8,6 +8,21 @@
 ![ alt text](./demo.gif)
 
 This is a simple extendable REPL CLI.
+
+## 🚚 Installation
+
+```bash
+deno install -A -r https://deno.land/x/repl/main.ts -n repl
+```
+
+## 🚀 Quick Start
+
+```bash
+deno run -A https://deno.land/x/repl/main.ts
+```
+
+## 🧩 Plugins
+
 Currently available plugins:
 
 - [Docker](https://docker.com/)
@@ -30,15 +45,3 @@ Currently available plugins:
 - [Bazel](https://bazel.build/)
 - [Asdf](https://asdf-vm.com/)
 - [Terragrunt](https://terragrunt.gruntwork.io/)
-
-## 🚚 Installation
-
-```bash
-deno install -A -r https://deno.land/x/repl/main.ts -n repl
-```
-
-## 🚀 Quick Start
-
-```bash
-deno run -A https://deno.land/x/repl/main.ts
-```
