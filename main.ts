@@ -15,6 +15,7 @@ import Dagger from "./plugins/dagger.ts";
 import Helm from "./plugins/helm.ts";
 import Devbox from "./plugins/devbox.ts";
 import Kubectl from "./plugins/kubectl.ts";
+import Npm from "./plugins/npm.ts";
 import Deno from "./plugins/deno.ts";
 import Bazel from "./plugins/bazel.ts";
 import Asdf from "./plugins/asdf.ts";
@@ -35,6 +36,7 @@ const plugins = [
   new Helm(),
   new Devbox(),
   new Kubectl(),
+  new Npm(),
   new Deno(),
   new Bazel(),
   new Asdf(),
