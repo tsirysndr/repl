@@ -21,6 +21,7 @@ import Bazel from "./plugins/bazel.ts";
 import Asdf from "./plugins/asdf.ts";
 import Terragrunt from "./plugins/terragrunt.ts";
 import Podman from "./plugins/podman.ts";
+import Nix from "./plugins/nix.ts";
 
 const plugins = [
   new Docker(),
@@ -44,6 +45,7 @@ const plugins = [
   new Asdf(),
   new Terragrunt(),
   new Podman(),
+  new Nix(),
 ];
 
 const history: string[] = [];
