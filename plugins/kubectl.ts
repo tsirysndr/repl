@@ -1,4 +1,4 @@
-import { spawn } from "../src/helpers.ts";
+import { evaluateSystemCommand, spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
 import Brew from "./brew.ts";
 
@@ -135,7 +135,7 @@ class Kubectl implements Plugin {
     if (cmd === "") {
       return;
     }
-    console.log("Command not found");
+    await evaluateSystemCommand(command);
   }
 
   async install(): Promise<void> {

@@ -23,6 +23,7 @@ import Terragrunt from "./plugins/terragrunt.ts";
 import Podman from "./plugins/podman.ts";
 import Nix from "./plugins/nix.ts";
 import HomeManager from "./plugins/home-manager.ts";
+import { availableCommands, evaluateSystemCommand } from "./src/helpers.ts";
 
 const plugins = [
   new Docker(),
@@ -51,12 +52,23 @@ const plugins = [
 ];
 
 const history: string[] = [];
-const useSuggestions = plugins.map((p) => `use ${p.name}`);
+const useSuggestions = [
+  ...(await availableCommands()),
+  ...plugins.map((p) => `use ${p.name}`),
+];
 
 async function repl(
   message = "",
-  suggestions = ["use", "help", "list", "exit", ...history, ...useSuggestions],
-  evaluate?: (command: string) => Promise<void>
+  suggestions = [
+    "use",
+    "help",
+    "history",
+    "list",
+    "exit",
+    ...history,
+    ...useSuggestions,
+  ],
+  evaluate: (command: string) => Promise<void> = evaluateSystemCommand
 ) {
   const command = await Input.prompt({
     message,
@@ -85,6 +97,7 @@ async function repl(
     console.log(`Common Commands:
     use         Use a plugin
     help        Show this message
+    history     Show command history
     list        List available plugins
     exit        Exit the repl`);
     repl(message, suggestions, evaluate);
@@ -114,14 +127,20 @@ async function repl(
     return;
   }
 
-  if (evaluate) {
-    history.push(command);
-    await evaluate(command);
-    repl(message, [...suggestions, ...history], evaluate);
+  if (command === "history") {
+    console.log(history.join("\n"));
+    repl(message, suggestions, evaluate);
     return;
   }
 
-  repl(message, suggestions, evaluate);
+  if (command === "") {
+    repl(message, suggestions, evaluate);
+    return;
+  }
+
+  history.push(command);
+  await evaluate(command);
+  repl(message, [...suggestions, ...history], evaluate);
 }
 
 // Learn more at https://deno.land/manual/examples/module_metadata#concepts
