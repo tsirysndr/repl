@@ -22,6 +22,7 @@ import Asdf from "./plugins/asdf.ts";
 import Terragrunt from "./plugins/terragrunt.ts";
 import Podman from "./plugins/podman.ts";
 import Nix from "./plugins/nix.ts";
+import HomeManager from "./plugins/home-manager.ts";
 
 const plugins = [
   new Docker(),
@@ -46,6 +47,7 @@ const plugins = [
   new Terragrunt(),
   new Podman(),
   new Nix(),
+  new HomeManager(),
 ];
 
 const history: string[] = [];
