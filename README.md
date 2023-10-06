@@ -64,3 +64,4 @@ Currently available plugins:
 - [Home Manager](https://nix-community.github.io/home-manager/)
 - [FlakeHub](https://flakehub.com/)
 - [OpenTofu](https://opentofu.org/)
+- [Fastlane](https://fastlane.tools/)
