@@ -1,4 +1,4 @@
-import { spawn } from "../src/helpers.ts";
+import { evaluateSystemCommand, spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
 
 class Podman implements Plugin {
@@ -138,7 +138,7 @@ class Podman implements Plugin {
     if (cmd === "") {
       return;
     }
-    console.log("Command not found");
+    await evaluateSystemCommand(command);
   }
 
   async install(): Promise<void> {
