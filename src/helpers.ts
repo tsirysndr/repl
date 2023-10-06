@@ -36,7 +36,8 @@ export async function availableCommands(): Promise<string[]> {
 }
 
 export async function canExecCommand(exec: string) {
-  return (await availableCommands()).includes(exec);
+  const command = exec.split(" ")[0];
+  return (await availableCommands()).includes(command);
 }
 
 export async function evaluateSystemCommand(command: string) {
