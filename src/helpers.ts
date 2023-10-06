@@ -1,3 +1,6 @@
+import { Input, green } from "../deps.ts";
+import Brew from "../plugins/brew.ts";
+
 export async function spawn(name: string, args: string[]): Promise<void> {
   const command = new Deno.Command(name, {
     args,
@@ -32,6 +35,21 @@ export async function availableCommands(): Promise<string[]> {
   return stdout.split("\n").filter((s) => s !== "");
 }
 
-export function evaluateSystemCommand(command: string) {
-  return spawn("sh", ["-c", command]);
+export async function canExecCommand(exec: string) {
+  return (await availableCommands()).includes(exec);
+}
+
+export async function evaluateSystemCommand(command: string) {
+  if (await canExecCommand(command)) {
+    return await spawn("sh", ["-c", command]);
+  }
+  const name = command.split(" ")[0];
+  const yes = await Input.prompt({
+    message: `${green("`" + name + "`")} is not installed, install it? (y/n)`,
+    suggestions: ["yes", "no"],
+  });
+  if (yes === "yes" || yes === "y") {
+    await new Brew().install();
+    await spawn("sh", ["-c", `brew install ${name}`]);
+  }
 }
