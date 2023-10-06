@@ -1,55 +1,6 @@
 import { Input, green, cyan } from "./deps.ts";
-
-import Docker from "./plugins/docker.ts";
-import Git from "./plugins/git.ts";
-import GithubCLI from "./plugins/github-cli.ts";
-import Terraform from "./plugins/terraform.ts";
-import Brew from "./plugins/brew.ts";
-import Bun from "./plugins/bun.ts";
-import Pkgx from "./plugins/pkgx.ts";
-import Pulumi from "./plugins/pulumi.ts";
-import Tilt from "./plugins/tilt.ts";
-import Spin from "./plugins/spin.ts";
-import Wasmer from "./plugins/wasmer.ts";
-import Dagger from "./plugins/dagger.ts";
-import Helm from "./plugins/helm.ts";
-import Devbox from "./plugins/devbox.ts";
-import Kubectl from "./plugins/kubectl.ts";
-import Npm from "./plugins/npm.ts";
-import Deno from "./plugins/deno.ts";
-import Bazel from "./plugins/bazel.ts";
-import Asdf from "./plugins/asdf.ts";
-import Terragrunt from "./plugins/terragrunt.ts";
-import Podman from "./plugins/podman.ts";
-import Nix from "./plugins/nix.ts";
-import HomeManager from "./plugins/home-manager.ts";
+import { plugins } from "./plugins/mod.ts";
 import { availableCommands, evaluateSystemCommand } from "./src/helpers.ts";
-
-const plugins = [
-  new Docker(),
-  new Git(),
-  new GithubCLI(),
-  new Terraform(),
-  new Brew(),
-  new Bun(),
-  new Pkgx(),
-  new Pulumi(),
-  new Tilt(),
-  new Spin(),
-  new Wasmer(),
-  new Dagger(),
-  new Helm(),
-  new Devbox(),
-  new Kubectl(),
-  new Npm(),
-  new Deno(),
-  new Bazel(),
-  new Asdf(),
-  new Terragrunt(),
-  new Podman(),
-  new Nix(),
-  new HomeManager(),
-];
 
 const history: string[] = [];
 const useSuggestions = [
