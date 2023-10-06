@@ -25,6 +25,7 @@ import FlakeHub from "./flakehub.ts";
 import OpenTofu from "./opentofu.ts";
 import Fastlane from "./fastlane.ts";
 import Gulp from "./gulp.ts";
+import Flox from "./flox.ts";
 
 export const plugins = [
   new Docker(),
@@ -54,4 +55,5 @@ export const plugins = [
   new OpenTofu(),
   new Fastlane(),
   new Gulp(),
+  new Flox(),
 ];

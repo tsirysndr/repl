@@ -66,3 +66,4 @@ Currently available plugins:
 - [OpenTofu](https://opentofu.org/)
 - [Fastlane](https://fastlane.tools/)
 - [Gulp](https://gulpjs.com/)
+- [Flox](https://flox.dev/)
