@@ -13,7 +13,7 @@
 
 ![ alt text](./demo.gif)
 
-This is a simple extendable REPL CLI.
+This is a simple extendable REPL CLI, with auto-completion, history, auto-install and more.
 
 ## 🚚 Installation
 
