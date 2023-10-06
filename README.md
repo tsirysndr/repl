@@ -17,8 +17,16 @@ This is a simple extendable REPL CLI, with auto-complete, history, auto-install 
 
 ## 🚚 Installation
 
+using [Deno](https://deno.com/):
+
 ```bash
 deno install -A -r https://deno.land/x/repl/main.ts -n repl
+```
+
+using [Nix](https://nixos.org/):
+
+```bash
+nix profile install --experimental-features "nix-command flakes" github:tsirysndr/repl
 ```
 
 ## 🚀 Quick Start
