@@ -23,6 +23,7 @@ import Nix from "./nix.ts";
 import HomeManager from "./home-manager.ts";
 import FlakeHub from "./flakehub.ts";
 import OpenTofu from "./opentofu.ts";
+import Fastlane from "./fastlane.ts";
 
 export const plugins = [
   new Docker(),
@@ -50,4 +51,5 @@ export const plugins = [
   new HomeManager(),
   new FlakeHub(),
   new OpenTofu(),
+  new Fastlane(),
 ];
