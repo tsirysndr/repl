@@ -53,3 +53,4 @@ Currently available plugins:
 - [Terragrunt](https://terragrunt.gruntwork.io/)
 - [Podman](https://podman.io/)
 - [Nix](https://nixos.org/)
+- [Home Manager](https://nix-community.github.io/home-manager/)

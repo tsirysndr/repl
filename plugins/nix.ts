@@ -124,6 +124,10 @@ class Nix implements Plugin {
       "-c",
       "type nix > /dev/null || curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install",
     ]);
+    Deno.env.set(
+      "PATH",
+      `${Deno.env.get("PATH")}:/nix/var/nix/profiles/default/bin`
+    );
   }
 }
 
