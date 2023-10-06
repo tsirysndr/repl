@@ -1,4 +1,4 @@
-import { Input, green, cyan } from "./deps.ts";
+import { Input, green, cyan, magenta } from "./deps.ts";
 import { plugins } from "./plugins/mod.ts";
 import { availableCommands, evaluateSystemCommand } from "./src/helpers.ts";
 
@@ -96,6 +96,22 @@ async function repl(
 
 // Learn more at https://deno.land/manual/examples/module_metadata#concepts
 if (import.meta.main) {
+  console.log(
+    magenta(`                                        .
+        .(((((((((((((((((((((((((((((          
+        .((                        (((          
+        .((      (####            .(((          
+        .((    ****.#####          (((          
+        .((      *****.####        (((          
+        .((        ,**.#####.*    .(((          
+        .((          ####.*****    (((          
+        .((        ####.*****      (((          
+        .((        .#.****        .(((          
+        .((            *          .(((          
+        .((                        (((          
+        ./(((((((((((((((((((((((((((          .
+                                        .`)
+  );
   console.log("Repl v0.5.1 🚀 ✨");
   console.log("exit using ctrl+c, or exit, type help for more info");
   repl();
