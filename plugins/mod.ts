@@ -22,6 +22,7 @@ import Podman from "./podman.ts";
 import Nix from "./nix.ts";
 import HomeManager from "./home-manager.ts";
 import FlakeHub from "./flakehub.ts";
+import OpenTofu from "./opentofu.ts";
 
 export const plugins = [
   new Docker(),
@@ -48,4 +49,5 @@ export const plugins = [
   new Nix(),
   new HomeManager(),
   new FlakeHub(),
+  new OpenTofu(),
 ];
