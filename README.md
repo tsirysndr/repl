@@ -54,3 +54,4 @@ Currently available plugins:
 - [Podman](https://podman.io/)
 - [Nix](https://nixos.org/)
 - [Home Manager](https://nix-community.github.io/home-manager/)
+- [FlakeHub](https://flakehub.com/)
