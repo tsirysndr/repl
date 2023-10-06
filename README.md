@@ -65,3 +65,4 @@ Currently available plugins:
 - [FlakeHub](https://flakehub.com/)
 - [OpenTofu](https://opentofu.org/)
 - [Fastlane](https://fastlane.tools/)
+- [Gulp](https://gulpjs.com/)
