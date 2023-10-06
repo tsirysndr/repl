@@ -63,3 +63,4 @@ Currently available plugins:
 - [Nix](https://nixos.org/)
 - [Home Manager](https://nix-community.github.io/home-manager/)
 - [FlakeHub](https://flakehub.com/)
+- [OpenTofu](https://opentofu.org/)
