@@ -109,6 +109,10 @@ class Rtx implements Plugin {
     );
     await spawn("sh", [
       "-c",
+      "type rtx > /dev/null || (type apt && sudo apt install libssl-dev -y)",
+    ]);
+    await spawn("sh", [
+      "-c",
       "type rtx > /dev/null || curl https://rtx.pub/install.sh | sh",
     ]);
     await spawn("sh", ["-c", "mkdir -p ~/.local/share/rtx/shims"]);
