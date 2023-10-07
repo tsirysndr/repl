@@ -30,6 +30,7 @@ import Devenv from "./devenv.ts";
 import Turbo from "./turbo.ts";
 import Turso from "./turso.ts";
 import Neon from "./neon.ts";
+import Pscale from "./pscale.ts";
 
 export const plugins = [
   new Docker(),
@@ -64,4 +65,5 @@ export const plugins = [
   new Turbo(),
   new Turso(),
   new Neon(),
+  new Pscale(),
 ];
