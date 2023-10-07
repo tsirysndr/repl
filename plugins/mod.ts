@@ -33,6 +33,7 @@ import Neon from "./neon.ts";
 import Pscale from "./pscale.ts";
 import Grunt from "./grunt.ts";
 import Rtx from "./rtx.ts";
+import Nx from "./nx.ts";
 
 export const plugins = [
   new Docker(),
@@ -70,4 +71,5 @@ export const plugins = [
   new Pscale(),
   new Grunt(),
   new Rtx(),
+  new Nx(),
 ];
