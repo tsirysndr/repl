@@ -25,7 +25,7 @@
 
         packages.default = pkgs.deno2nix.mkExecutable {
           pname = "repl";
-          version = "0.6.0";
+          version = "0.6.1";
 
           src = ./.;
           lockfile = "./deno.lock";
