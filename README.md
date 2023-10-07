@@ -71,3 +71,4 @@ Currently available plugins:
 - [Turbo](https://turbo.build/)
 - [Turso](https://turso.tech/)
 - [Neon](https://neon.tech/)
+- [PlanetScale](https://planetscale.com/)
