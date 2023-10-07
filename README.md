@@ -73,3 +73,4 @@ Currently available plugins:
 - [Neon](https://neon.tech/)
 - [PlanetScale](https://planetscale.com/)
 - [Grunt](https://gruntjs.com/)
+- [Rtx](https://github.com/jdx/rtx)
