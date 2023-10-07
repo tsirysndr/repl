@@ -69,3 +69,4 @@ Currently available plugins:
 - [Flox](https://flox.dev/)
 - [Devenv](https://devenv.sh/)
 - [Turbo](https://turbo.build/)
+- [Turso](https://turso.tech/)

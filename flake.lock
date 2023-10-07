@@ -10,15 +10,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1694341738,
-        "narHash": "sha256-zEosA90LiNd3/EFpZNKs7XPdY7PIsat19I6uJb/MuYU=",
-        "owner": "SnO2WMaN",
+        "lastModified": 1696519110,
+        "narHash": "sha256-vvESDkjGfXXec2MeIEP1wcZKX/gOlhCG/XlEz/lM0rI=",
+        "owner": "tsirysndr",
         "repo": "deno2nix",
-        "rev": "38dcc186763ab930acd1d751b4bfe3c0bd606ef3",
+        "rev": "396de5c81f889acdc18fbed0c551736110ead5f9",
         "type": "github"
       },
       "original": {
-        "owner": "SnO2WMaN",
+        "owner": "tsirysndr",
         "repo": "deno2nix",
         "type": "github"
       }

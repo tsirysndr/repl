@@ -4,7 +4,7 @@
   inputs = {
     utils.url = "github:numtide/flake-utils";
     deno2nix = {
-      url = "github:SnO2WMaN/deno2nix";
+      url = "github:tsirysndr/deno2nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
