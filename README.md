@@ -67,3 +67,4 @@ Currently available plugins:
 - [Fastlane](https://fastlane.tools/)
 - [Gulp](https://gulpjs.com/)
 - [Flox](https://flox.dev/)
+- [Devenv](https://devenv.sh/)
