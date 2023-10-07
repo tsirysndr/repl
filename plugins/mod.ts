@@ -29,6 +29,7 @@ import Flox from "./flox.ts";
 import Devenv from "./devenv.ts";
 import Turbo from "./turbo.ts";
 import Turso from "./turso.ts";
+import Neon from "./neon.ts";
 
 export const plugins = [
   new Docker(),
@@ -62,4 +63,5 @@ export const plugins = [
   new Devenv(),
   new Turbo(),
   new Turso(),
+  new Neon(),
 ];
