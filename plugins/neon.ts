@@ -28,23 +28,23 @@ class Neon implements Plugin {
       help: () => {
         console.log(`
         Commands:
-        neonctl auth
+        auth
         └────────────────>  Authenticate
-        neonctl me
+        me
         └────────────────>  Show current user
-        neonctl projects
+        projects
         └────────────────>  Manage projects
-        neonctl branches
+        branches
         └────────────────>  Manage branches
-        neonctl databases
+        databases
         └────────────────>  Manage databases
-        neonctl roles
+        roles
         └────────────────>  Manage roles
-        neonctl operations
+        operations
         └────────────────>  Manage operations
-        neonctl connection-string [branch]
+        connection-string [branch]
         └────────────────>  Get connection string
-        neonctl completion
+        completion
         └────────────────>  generate completion script
         `);
         return Promise.resolve();
