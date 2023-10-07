@@ -28,6 +28,7 @@ import Gulp from "./gulp.ts";
 import Flox from "./flox.ts";
 import Devenv from "./devenv.ts";
 import Turbo from "./turbo.ts";
+import Turso from "./turso.ts";
 
 export const plugins = [
   new Docker(),
@@ -60,4 +61,5 @@ export const plugins = [
   new Flox(),
   new Devenv(),
   new Turbo(),
+  new Turso(),
 ];
