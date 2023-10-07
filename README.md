@@ -74,3 +74,4 @@ Currently available plugins:
 - [PlanetScale](https://planetscale.com/)
 - [Grunt](https://gruntjs.com/)
 - [Rtx](https://github.com/jdx/rtx)
+- [Nx](https://nx.dev/)
