@@ -68,3 +68,4 @@ Currently available plugins:
 - [Gulp](https://gulpjs.com/)
 - [Flox](https://flox.dev/)
 - [Devenv](https://devenv.sh/)
+- [Turbo](https://turbo.build/)
