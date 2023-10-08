@@ -1,5 +1,6 @@
 import { evaluateSystemCommand, spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
+import Nix from "./nix.ts";
 
 class Devbox implements Plugin {
   name = "devbox";
@@ -60,6 +61,7 @@ class Devbox implements Plugin {
   }
 
   async install(): Promise<void> {
+    await new Nix().install();
     await spawn("sh", [
       "-c",
       "type devbox > /dev/null || curl -fsSL https://get.jetpack.io/devbox | bash",
