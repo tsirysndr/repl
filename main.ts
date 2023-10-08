@@ -112,7 +112,7 @@ if (import.meta.main) {
         ./(((((((((((((((((((((((((((          .
                                         .`)
   );
-  console.log("Repl v0.6.1 🚀 ✨");
+  console.log("Repl v0.6.2 🚀 ✨");
   console.log("exit using ctrl+c, or exit, type help for more info");
   repl();
 }
