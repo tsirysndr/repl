@@ -44,6 +44,7 @@ Currently available plugins:
 - [Git](https://git-scm.com/)
 - [Terraform](https://terraform.io/)
 - [Homebrew](https://brew.sh/)
+- [Buf](https://buf.build/docs/ecosystem/cli-overview#buf-cli-commands)
 - [Bun](https://bun.sh)
 - [Pkgx](https://pkgx.sh)
 - [Pulumi](https://pulumi.com)

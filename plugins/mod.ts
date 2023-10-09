@@ -3,6 +3,7 @@ import Git from "./git.ts";
 import GithubCLI from "./github-cli.ts";
 import Terraform from "./terraform.ts";
 import Brew from "./brew.ts";
+import Buf from "./buf.ts";
 import Bun from "./bun.ts";
 import Pkgx from "./pkgx.ts";
 import Pulumi from "./pulumi.ts";
@@ -41,6 +42,7 @@ export const plugins = [
   new GithubCLI(),
   new Terraform(),
   new Brew(),
+  new Buf(),
   new Bun(),
   new Pkgx(),
   new Pulumi(),
