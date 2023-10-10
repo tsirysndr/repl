@@ -1,5 +1,6 @@
 import { evaluateSystemCommand, spawn } from "../src/helpers.ts";
 import Plugin from "../src/plugin.ts";
+import Dagger from "./dagger.ts";
 import Deno from "./deno.ts";
 
 class Fluentci implements Plugin {
@@ -52,6 +53,7 @@ class Fluentci implements Plugin {
 
   async install(): Promise<void> {
     await new Deno().install();
+    await new Dagger().install();
     await spawn("sh", [
       "-c",
       "type fluentci > /dev/null || deno install -A -r https://cli.fluentci.io -n fluentci",

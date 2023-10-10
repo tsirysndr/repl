@@ -76,4 +76,4 @@ Currently available plugins:
 - [Grunt](https://gruntjs.com/)
 - [Rtx](https://github.com/jdx/rtx)
 - [Nx](https://nx.dev/)
-- [Fluentci](https://docs.fluentci.io/reference/)
+- [Fluent CI](https://docs.fluentci.io/reference/)
