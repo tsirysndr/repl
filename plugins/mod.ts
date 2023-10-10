@@ -35,6 +35,7 @@ import Pscale from "./pscale.ts";
 import Grunt from "./grunt.ts";
 import Rtx from "./rtx.ts";
 import Nx from "./nx.ts";
+import Fluentci from "./fluentci.ts";
 
 export const plugins = [
   new Docker(),
@@ -74,4 +75,5 @@ export const plugins = [
   new Grunt(),
   new Rtx(),
   new Nx(),
+  new Fluentci(),
 ];
