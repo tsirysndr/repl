@@ -36,6 +36,7 @@ import Grunt from "./grunt.ts";
 import Rtx from "./rtx.ts";
 import Nx from "./nx.ts";
 import Fluentci from "./fluentci.ts";
+import GitlabCLI from "./gitlab-cli.ts";
 
 export const plugins = [
   new Docker(),
@@ -76,4 +77,5 @@ export const plugins = [
   new Rtx(),
   new Nx(),
   new Fluentci(),
+  new GitlabCLI(),
 ];

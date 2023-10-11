@@ -77,3 +77,4 @@ Currently available plugins:
 - [Rtx](https://github.com/jdx/rtx)
 - [Nx](https://nx.dev/)
 - [Fluent CI](https://docs.fluentci.io/reference/)
+- [Gitlab CLI](https://gitlab.com/gitlab-org/cli/-/tree/main/docs/source)
