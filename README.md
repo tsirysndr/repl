@@ -17,17 +17,25 @@ This is a simple extendable REPL CLI, with auto-complete, history, auto-install 
 
 ## 🚚 Installation
 
-using [Deno](https://deno.com/):
+using [Deno](https://deno.com/) :
 
 ```bash
 deno install -A -r https://deno.land/x/repl/main.ts -n repl
 ```
 
-using [Nix](https://nixos.org/):
+using [Nix](https://nixos.org/) :
 
 ```bash
 nix profile install --experimental-features "nix-command flakes" github:tsirysndr/repl
 ```
+
+using [Homebrew](https://brew.sh/) :
+
+```bash
+brew install tsirysndr/tap/repl
+```
+
+Or download the binary for your platform from the [releases](https://github.com/tsirysndr/repl/releases) page.
 
 ## 🚀 Quick Start
 
