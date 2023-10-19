@@ -53,7 +53,7 @@ class Yarn implements Plugin {
       workspace: (args: string[]) => spawn(this.name, ["workspace", ...args]),
       workspaces: (args: string[]) => spawn(this.name, ["workspaces", ...args]),
       help: () => {
-        console.log(`    NPM Commands:
+        console.log(`    Yarn Commands:
       add                  Installs a package and any packages that it depends on
       audit                Perform a vulnerability audit against the installed packages
       autoclean            Cleans and removes unnecessary files from package dependencies
