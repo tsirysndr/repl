@@ -78,3 +78,4 @@ Currently available plugins:
 - [Nx](https://nx.dev/)
 - [Fluent CI](https://docs.fluentci.io/reference/)
 - [Gitlab CLI](https://gitlab.com/gitlab-org/cli/-/tree/main/docs/source)
+- [Yarn](https://classic.yarnpkg.com/en/docs/cli/)
