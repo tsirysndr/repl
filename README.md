@@ -20,7 +20,7 @@ This is a simple extendable REPL CLI, with auto-complete, history, auto-install 
 using [Deno](https://deno.com/) :
 
 ```bash
-deno install -A -r https://deno.land/x/repl/main.ts -n repl
+deno install -A -r --global https://deno.land/x/repl/main.ts -n repl
 ```
 
 using [Nix](https://nixos.org/) :
