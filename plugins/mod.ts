@@ -33,7 +33,7 @@ import Turso from "./turso.ts";
 import Neon from "./neon.ts";
 import Pscale from "./pscale.ts";
 import Grunt from "./grunt.ts";
-import Rtx from "./rtx.ts";
+import Mise from "./mise.ts";
 import Nx from "./nx.ts";
 import Fluentci from "./fluentci.ts";
 import GitlabCLI from "./gitlab-cli.ts";
@@ -75,7 +75,7 @@ export const plugins = [
   new Neon(),
   new Pscale(),
   new Grunt(),
-  new Rtx(),
+  new Mise(),
   new Nx(),
   new Fluentci(),
   new GitlabCLI(),
