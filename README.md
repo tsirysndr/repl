@@ -20,7 +20,7 @@ This is a simple extendable REPL CLI, with auto-complete, history, auto-install 
 using [Deno](https://deno.com/) :
 
 ```bash
-deno install -A -r --global https://deno.land/x/repl/main.ts -n repl
+deno install -A -r -g https://deno.land/x/repl/main.ts -n repl
 ```
 
 using [Nix](https://nixos.org/) :
@@ -82,7 +82,7 @@ Currently available plugins:
 - [Neon](https://neon.tech/)
 - [PlanetScale](https://planetscale.com/)
 - [Grunt](https://gruntjs.com/)
-- [Rtx](https://github.com/jdx/rtx)
+- [Mise](https://mise.jdx.dev/)
 - [Nx](https://nx.dev/)
 - [Fluent CI](https://docs.fluentci.io/reference/)
 - [Gitlab CLI](https://gitlab.com/gitlab-org/cli/-/tree/main/docs/source)
